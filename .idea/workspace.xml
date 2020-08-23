@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2844317f-606b-47d4-9098-6b474ce79a76" name="Default Changelist" comment="" />
+    <list default="true" id="a0393894-d64d-4df3-97ad-c43b7a5711aa" name="Default Changelist" comment="Init commit">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Parkscene_Background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Pokemon_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/SkyDay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pockeball.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsMarathon.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ProjectId" id="1fdwVom1ndjVE3QSEv70HaPLVg4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />

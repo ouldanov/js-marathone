@@ -1,41 +1,56 @@
-// console.log(2 + 2);
-// console.log(10 - 5);
-// console.log(2 * 4);
-// console.log(121 / 11);
+const thunderJolt = document.getElementById('thunder-jolt');
+const regularKick = document.getElementById('regular-kick');
 
-let currentYear = 2020;
-const birthdayYear = 1988;
-const age = currentYear - birthdayYear;
-// console.log(age);
+const character = {
+  name: 'Pikachu',
+  defaultHP: 100,
+  damageHP: 100,
+  elHP: document.getElementById('health-character'),
+  elProgressBar: document.getElementById('progressbar-character'),
+};
+const enemy = {
+  name: 'Charmander',
+  defaultHP: 100,
+  damageHP: 100,
+  elHP: document.getElementById('health-enemy'),
+  elProgressBar: document.getElementById('progressbar-enemy'),
+};
 
-let a = 10;
-let b = 7;
-// console.log(a + b);
-// console.log(a - b);
-// console.log(a * b);
-// console.log(a / b);
-//
-// console.log(a % b);
+thunderJolt.addEventListener('click', () => {
+  changeHP(random(30), character);
+  changeHP(random(30), enemy);
+});
+regularKick.addEventListener('click', () => {
+  changeHP(random(10), enemy);
+});
 
-let incrementA = 1;
-let incrementB = 1;
+function init() {
+  renderHP(character);
+  renderHP(enemy);
+}
 
-let c = ++incrementA;
-const d = incrementB++;
+function renderHP(person) {
+  renderHPLife(person);
+  renderProgressBar(person);
+}
+function renderHPLife(person) {
+  person.elHP.innerText = person.damageHP + ' / ' + character.defaultHP;
+}
+function renderProgressBar(person) {
+  person.elProgressBar.style.width = person.damageHP + '%';
+}
+function changeHP(count, person) {
+  if (person.damageHP < count) {
+    person.damageHP = 0;
+    alert(person.name + ' проиграл');
+    thunderJolt.disabled = true;
+  } else {
+    person.damageHP -= count;
+  }
+  renderHP(person);
+}
+function random(num) {
+  return Math.ceil(Math.random() * num);
+}
 
-// console.log(incrementA); // 1 + 1
-// console.log(incrementB); // 1 + 1
-// console.log(c); // 1 + 1
-// console.log(d); // 1
-
-// c = c + a;
-c += a;
-console.log(c);
-c -= a;
-console.log(c);
-c *= a;
-console.log(c);
-c /= a;
-console.log(c);
-c %= a;
-console.log(c);
+init();
